@@ -1,0 +1,85 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Table</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+  
+    
+    <div class="sidebar">
+            <h2 class="brand">Naestved Kommune</h2>
+       
+            <a class="active" href="#" class="byg"><i class="fa fa-cog"></i>TILSTAND</a>
+            <a href="" class="byg down">BYGNINGER</a>
+            <p class="sub-nav">Alle Bygninger</p>
+            <p class="sub-nav">Export og import</p>
+    
+            <a href="" class="byg down">BYGNINGER</a>
+            <p class="sub-nav">Alle Bygninger</p>
+            <p class="sub-nav">Export og import</p>
+    
+            <a href="" class="byg down">BYGNINGER</a>
+            <p class="sub-nav">Alle Bygninger</p>
+            <p class="sub-nav">Export og import</p>
+    
+            <a href="" class="byg down">BYGNINGER</a>
+            <p class="sub-nav">Alle Bygninger</p>
+            <p class="sub-nav">Export og import</p>
+    
+    
+            
+    
+          </div>
+          
+          <div class="content">
+            <div class="top-nav">
+            <h1 class="nav-left"><i class="fa fa-cog"></i>Tilstand</h1>
+            <h2 class="nav-right"></h2>
+            <h2 class="nav-right"><i class="fa fa-user"></i>Administrator</h2></div>
+            
+            <div id="wdr-component"></div>
+            <link href="https://cdn.webdatarocks.com/latest/webdatarocks.min.css" rel="stylesheet"/>
+            <script src="https://cdn.webdatarocks.com/latest/webdatarocks.toolbar.min.js"></script>
+            <script src="https://cdn.webdatarocks.com/latest/webdatarocks.js"></script>
+            <script>
+            var pivot = new WebDataRocks({
+              container: "#wdr-component",
+              toolbar: true,
+              report: {
+                dataSource: {
+                  filename: "Book1.csv"
+                }
+              }
+            });
+            </script>
+            <!-- Static Table End -->
+            
+            <div class="colors">
+            <div class="boxik"><img src="redhome.png" alt="red" class="farbicka"><p class="bck red">Advarsel</p></div>
+            <div class="boxik"><img src="yellowhome.png" alt="yellow" class="farbicka"><p class="bck yel">Middelmadigt</p></div>
+            <div class="boxik"><img src="greenhome.png" alt="green" class="farbicka"><p class="bck grn">Vedligeholdt</p></div>
+        </div>
+          </div>
+            
+    
+        
+        
+    </div>
+
+   
+
+</body>
+
+</html>
